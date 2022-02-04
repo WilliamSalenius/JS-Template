@@ -37,7 +37,7 @@ if (artal % 4 != 0) {
 
 
 // Uppgift 3
-const maxlottorad = 13;
+/** const maxlottorad = 13;
 let lottorad = 0;
 
 while (lottorad < maxlottorad) {
@@ -49,4 +49,4 @@ while (lottorad < maxlottorad) {
         console.log(nummer);
     }
     lottorad++;
-}
+} */
