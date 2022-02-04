@@ -41,8 +41,8 @@ const maxlottorad = 13;
 let lottorad = 0;
 
 while (lottorad < maxlottorad) {
-    let nummer = Math.floor(Math.random() * 3) + 1;
-    if (nummer == 3) {
+    let nummer = Math.floor(Math.random() * 3);
+    if (nummer == 0) {
         let nummer = 'X';
         console.log(nummer);
     } else {
