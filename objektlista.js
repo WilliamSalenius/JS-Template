@@ -33,14 +33,33 @@ const avatar = {
       // det största talet i array:en results.
       // Du ska inte använda någon färdigdefinierad metod,
       // t ex Math.max(), för att få fram det största värdet.
-      this.results.sort();
-      maxResult = resluts[0];
+      let sortedResults = this.results.sort(function(a, b) {
+        return a - b
+      });
+      sortedResults.reverse();
+      let maxResult = sortedResults[0];
       return maxResult;
     },
 
-    incwins: function () {
+    incwins() {
         this.wins++;
         return this.wins;
+    },
+
+    getMinResult: function () {
+      let sortedResults = this.results.sort(function(a, b) {
+        return a - b
+      });
+      let minResult = sortedResults[0];
+      return minResult;
+    },
+
+    addResult(res) {
+      this.results.push(res);
+    },
+
+    clearResults() {
+      this.results.length() = 0
     },
   };
   
@@ -48,12 +67,18 @@ const avatar = {
   const theAvatar = avatar;
   const aName = theAvatar.aName;
   const speed = theAvatar.getSpeed();
-  const mResult = theAvatar.getMeanResult();
   const wins = theAvatar.incwins();
+  const noResults = theAvatar.clearResults();
+  const newResult = theAvatar.addResult(25);
+  const mResult = theAvatar.getMeanResult();
+  const maxResult = theAvatar.getMaxResult();
+  const minResult = theAvatar.getMinResult();
   console.log(aName);
   console.log(speed);
   console.log(mResult);
   console.log(wins);
+  console.log(maxResult)
+  console.log(minResult)
   
   // Övningar
   // --------------------------------------------------------------------------
