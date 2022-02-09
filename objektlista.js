@@ -77,8 +77,8 @@ const avatar = {
   console.log(speed);
   console.log(mResult);
   console.log(wins);
-  console.log(maxResult)
-  console.log(minResult)
+  console.log(maxResult);
+  console.log(minResult);
   
   // Övningar
   // --------------------------------------------------------------------------
