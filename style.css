@@ -2,7 +2,7 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(to top left, #43cea2, #185a9d);
+  background: linear-gradient(to top left, #EEBD89, #D13ABD);
 }
 
 #super-container {
