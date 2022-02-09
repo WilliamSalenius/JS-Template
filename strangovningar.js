@@ -82,4 +82,30 @@ stringOutput(dinString); */
 let dinString = prompt('Skriv din string:');
 charactersInString(dinString); */
 
-// Exercise 3
+// Exercise 3.1 (omständig)
+/** function moneyConvert(ammount) {
+    let stringAmmount = ammount.toString();
+    if (ammount % 1 == 0) {
+        return '$' + stringAmmount + '.00';
+    } else {
+        if (stringAmmount.split('.')[1].length < 2) {
+            return '$' + stringAmmount + '0';
+        } else if (stringAmmount.split('.')[1].length == 2) {
+            return '$' + stringAmmount;
+        } else {
+            return '$' + stringAmmount.split('.')[0] + '.' + stringAmmount.split('.')[1].slice(0, 2);
+        }
+    }
+}
+
+let pengar = prompt('Ange dina pengar:');
+alert(moneyConvert(pengar)); */
+
+// Exercise 3.2
+function moneyConvert(ammount) {
+    let fixedAmmount = (+ammount).toFixed(2);
+    return '$' + fixedAmmount
+}
+
+let pengar = prompt('Ange dina pengar:');
+alert(moneyConvert(pengar));
