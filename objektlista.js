@@ -59,7 +59,7 @@ const avatar = {
     },
 
     clearResults() {
-      this.results.length = 0
+      this.results.length = 0;
     },
   };
   
@@ -87,7 +87,7 @@ const avatar = {
   //    denna till 0.
   // --------------------------------------------------------------------------
   // 2. Lägg även till metoden "incWins()", som ökar antalet vinster
-  //    med 1 varje gång den anropas.
+  //    med 1 varje gång den nanropas.
   //    Pröva metoden genom att anropa den via "theAvatar" från
   //    huvudprogrammet, och skriv ut egenskapen "wins" på konsolen.
   // --------------------------------------------------------------------------
