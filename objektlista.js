@@ -59,7 +59,7 @@ const avatar = {
     },
 
     clearResults() {
-      this.results.length() = 0
+      this.results.length = 0
     },
   };
   
