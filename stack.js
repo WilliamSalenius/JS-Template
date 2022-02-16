@@ -66,7 +66,6 @@ class Node {
 
     if (obalanserad === false && stack.length == stack2.length) {
       alert('Balanserad')
-    } else if (obalanserad === true) {
-    } else {
+    } else if (obalanserad === false) {
       alert('Obalanserad')
     }
