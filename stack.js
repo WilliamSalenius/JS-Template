@@ -47,22 +47,26 @@ class Node {
 
 
     // Demonstration
+    let obalanserad = false
     const stack = new Stack();
-    let myString = prompt('Ditt uttryck:')
-    for (i = 0; i < myString.lenght; i++) {
-        if (myString[i] === '(') {
-            stack.push(myString[i])
-        }
-    }
-
+    const stack2 = new Stack();
+    let myString = prompt('Ditt uttryck:');
     for (i = 0; i < myString.length; i++) {
-        if (myString[i] === ')') {
-            stack.pop()
+        if (stack2.length > stack.length) {
+            obalanserad = true
+            alert('Obalansered')
+            break;
+        } else if (myString[i] === '(') {
+            stack.push(myString[i]);
+        } else if (myString[i] === ')') {
+            stack2.push(myString[i]);
+            }
         }
-    }
 
-    if (stack.length == 0) {
-        alert('Balanserad')
+
+    if (obalanserad === false && stack.length == stack2.length) {
+      alert('Balanserad')
+    } else if (obalanserad === true) {
     } else {
-        alert('Obalanserad')
+      alert('Obalanserad')
     }
