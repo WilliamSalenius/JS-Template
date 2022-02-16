@@ -54,3 +54,15 @@ class Node {
             stack.push(myString[i])
         }
     }
+
+    for (i = 0; i < myString.length; i++) {
+        if (myString[i] === ')') {
+            stack.pop()
+        }
+    }
+
+    if (stack.length == 0) {
+        alert('Balanserad')
+    } else {
+        alert('Obalanserad')
+    }
