@@ -53,7 +53,7 @@ const stack2 = new Stack();
 let myString = prompt('Ditt uttryck:');
 for (i = 0; i < myString.length; i++) {
   if (stack2.length > stack.length) {
-    obalanserad = true
+    obalanserad = true;
     alert('Obalansered')
     break;
   } else if (myString[i] === '(') {
